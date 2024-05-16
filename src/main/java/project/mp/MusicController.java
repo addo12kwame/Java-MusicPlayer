@@ -40,10 +40,11 @@ public class MusicController {
 //    public void
     public void playMusic(ActionEvent e){
         currentSong = list.getSelectionModel().getSelectedItem();
+        if (mediaPlayer != null){
+        mediaPlayer.stop();}
         media = new Media(currentSong);
 
         mediaPlayer = new MediaPlayer(media);
-        mediaPlayer.stop();
         mediaPlayer.play();
     }
 
