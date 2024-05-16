@@ -1,0 +1,45 @@
+/** 
+ * roundbutton.css: place in same directory as RoundButton.java and  
+ *                  ensure the build system copies it to the same directory as RoundButton.class  
+ */
+
+
+
+.bodybg {
+	-fx-background-image: url('drums.png');
+
+	-fx-background-size: 100% 100%;
+	-fx-background-color:   #a0d2eb;
+}
+
+.button {
+  -fx-background-color: #f95d9b;
+  -fx-background-radius: 16.4, 15;
+  -fx-background-insets: -1.4, 0;
+  -fx-border-radius: 15;
+  -fx-border-width: 2;
+  -fx-border-color: dimgrey;
+  -fx-padding: 0;
+  -fx-font-size: 0;
+  -fx-text-fill:white
+}
+
+.closebutton .button:focused {
+  -fx-background-color:#ff5e6c;
+}
+
+.closebutton .closetext {
+  -fx-stroke: dimgrey;
+  -fx-fill: dimgrey;
+  -fx-font-size: 20;
+  -fx-translate-y: -1;
+}
+
+.closebutton .closeicon {
+  -fx-stroke: dimgrey;
+  -fx-stroke-width: 2;
+}
+
+.closebutton:hover {
+  -fx-effect: innershadow(gaussian, blue, 15, 0, 0, 0);
+}

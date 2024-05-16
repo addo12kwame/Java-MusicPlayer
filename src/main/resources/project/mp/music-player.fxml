@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.ProgressBar?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.mp.MusicController">
+   <children>
+      <SplitPane dividerPositions="0.4949866310160427" layoutX="119.0" layoutY="173.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <SplitPane dividerPositions="0.5322580645161291" layoutX="67.0" layoutY="108.0" orientation="VERTICAL" prefHeight="398.4" prefWidth="293.6" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" styleClass="bodybg" stylesheets="@style.css" />
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #161748;">
+                           <children>
+                              <ProgressBar id="songProBar" layoutX="46.0" layoutY="63.0" prefWidth="200.0" progress="0.0" style="-fx-background-color: #478559;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                              <Label id="songDisplayLabel" alignment="CENTER" layoutY="24.0" prefHeight="18.0" prefWidth="292.0" style="-fx-background-color: #fff685;" text="Label" AnchorPane.leftAnchor="0.2" AnchorPane.rightAnchor="0.2" />
+                              <Button id="playBtn" fx:id="playBtn" layoutX="46.0" layoutY="85.0" mnemonicParsing="false" onAction="#playMusic" prefHeight="22.0" prefWidth="60.0" styleClass="closebutton" stylesheets="@style.css" text="▶" />
+                              <Button id="speedBtn" layoutX="185.0" layoutY="119.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="60.0" styleClass="closebutton" stylesheets="@style.css" text="SPEED" />
+                              <Button id="pauseBtn" layoutX="115.0" layoutY="84.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="60.0" styleClass="closebutton" stylesheets="@style.css" text="⏸" />
+                              <Slider id="volumeSlider" layoutX="75.0" layoutY="154.0" />
+                              <Button id="nextBtn" layoutX="46.0" layoutY="119.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="60.0" styleClass="closebutton" stylesheets="@style.css" text="⏮" />
+                              <Button id="pauseBtn" layoutX="115.0" layoutY="119.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="60.0" styleClass="closebutton" stylesheets="@style.css" text="⏭" />
+                              <Button id="resetBtn" layoutX="185.0" layoutY="85.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="60.0" styleClass="closebutton" stylesheets="@style.css" text="🔁" />
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ListView id="list" fx:id="list" layoutX="50.0" layoutY="86.0" prefHeight="398.4" prefWidth="299.2" style="-fx-background-color: #00ddff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <MenuBar prefHeight="26.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem id="uploadSongBtn" fx:id="uploadSongBtn" mnemonicParsing="false" onAction="#getSong" text="Upload Song" />
+                  <MenuItem id="closeMenuBtn" mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
