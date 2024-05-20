@@ -1,59 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.gluonhq.charm.glisten.control.ProgressBar?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ProgressBar?>
 <?import javafx.scene.control.Slider?>
-<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.mp.MusicController">
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="357.0" prefWidth="631.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.mp.MusicController">
    <children>
-      <SplitPane dividerPositions="0.4949866310160427" layoutX="119.0" layoutY="173.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
-        <items>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
-               <children>
-                  <SplitPane dividerPositions="0.5322580645161291" layoutX="67.0" layoutY="108.0" orientation="VERTICAL" prefHeight="398.4" prefWidth="293.6" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                    <items>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" styleClass="bodybg" stylesheets="@style.css" />
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #161748;">
-                           <children>
-                              <ProgressBar id="songProBar" layoutX="46.0" layoutY="63.0" prefWidth="200.0" progress="0.0" style="-fx-background-color: #478559;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
-                              <Label id="songDisplayLabel" alignment="CENTER" layoutY="24.0" prefHeight="18.0" prefWidth="292.0" style="-fx-background-color: #fff685;" text="Label" AnchorPane.leftAnchor="0.2" AnchorPane.rightAnchor="0.2" />
-                              <Button id="playBtn" fx:id="playBtn" layoutX="46.0" layoutY="85.0" mnemonicParsing="false" onAction="#playMusic" prefHeight="22.0" prefWidth="60.0" styleClass="closebutton" stylesheets="@style.css" text="▶" />
-                              <Button id="speedBtn" layoutX="185.0" layoutY="119.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="60.0" styleClass="closebutton" stylesheets="@style.css" text="SPEED" />
-                              <Button id="pauseBtn" layoutX="115.0" layoutY="84.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="60.0" styleClass="closebutton" stylesheets="@style.css" text="⏸" />
-                              <Slider id="volumeSlider" layoutX="75.0" layoutY="154.0" />
-                              <Button id="nextBtn" layoutX="46.0" layoutY="119.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="60.0" styleClass="closebutton" stylesheets="@style.css" text="⏮" />
-                              <Button id="pauseBtn" layoutX="115.0" layoutY="119.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="60.0" styleClass="closebutton" stylesheets="@style.css" text="⏭" />
-                              <Button id="resetBtn" layoutX="185.0" layoutY="85.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="60.0" styleClass="closebutton" stylesheets="@style.css" text="🔁" />
-                           </children>
-                        </AnchorPane>
-                    </items>
-                  </SplitPane>
-               </children>
-            </AnchorPane>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
-               <children>
-                  <ListView id="list" fx:id="list" layoutX="50.0" layoutY="86.0" prefHeight="398.4" prefWidth="299.2" style="-fx-background-color: #00ddff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-               </children>
-            </AnchorPane>
-        </items>
-      </SplitPane>
-      <MenuBar prefHeight="26.0" prefWidth="600.0">
-        <menus>
-          <Menu mnemonicParsing="false" text="File">
-            <items>
-              <MenuItem id="uploadSongBtn" fx:id="uploadSongBtn" mnemonicParsing="false" onAction="#getSong" text="Upload Song" />
-                  <MenuItem id="closeMenuBtn" mnemonicParsing="false" text="Close" />
-            </items>
-          </Menu>
-        </menus>
-      </MenuBar>
+      <ImageView fx:id="imgView" fitHeight="355.0" fitWidth="681.0" layoutX="-1.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@music2.jpg" />
+         </image>
+      </ImageView>
+      <ProgressBar fx:id="progressBar" layoutX="14.0" layoutY="242.0" prefHeight="12.0" prefWidth="358.0" progress="0.0" style="-fx-accent: rgba(0, 32, 63, 1);" stylesheets="@style.css" />
+      <Button fx:id="previosBtn" layoutX="62.0" layoutY="264.0" mnemonicParsing="false" styleClass="circular-button" stylesheets="@style.css" text="⏮" />
+      <Button fx:id="pauseBtn" layoutX="193.0" layoutY="264.0" mnemonicParsing="false" onAction="#stopMusic" styleClass="circular-button" stylesheets="@style.css" text="⏸" />
+      <Button fx:id="nextBtn" layoutX="253.0" layoutY="264.0" mnemonicParsing="false" onAction="#nextSong" styleClass="circular-button" stylesheets="@style.css" text="⏭" />
+      <Label id="labelp" fx:id="playLabel" alignment="CENTER" layoutX="14.0" layoutY="177.0" prefHeight="50.0" prefWidth="358.0" styleClass="labelp" stylesheets="@style.css" text="KWAME" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Black Italic" size="12.0" />
+         </font>
+      </Label>
+      <Slider fx:id="volumeSlide" layoutX="138.0" layoutY="326.0" max="100.0" stylesheets="@style.css" value="50.0" />
+      <Label layoutX="112.0" layoutY="323.0" prefHeight="30.0" prefWidth="18.0" text="🔊" />
+      <ListView fx:id="musicList" layoutX="43.0" layoutY="92.0" prefHeight="86.0" prefWidth="300.0" styleClass="listview" stylesheets="@style.css" />
+      <HBox layoutY="1.0" prefHeight="38.0" prefWidth="631.0" spacing="300.0">
+         <children>
+            <Button fx:id="addDir" mnemonicParsing="false" onAction="#upload" prefHeight="41.0" prefWidth="170.0" styleClass="menu-button" stylesheets="@style.css" text="CHOOSE FOLDER">
+               <graphic>
+                  <FontAwesomeIcon glyphName="UPLOAD" />
+               </graphic>
+            </Button>
+            <Button fx:id="quit" mnemonicParsing="false" prefHeight="41.0" prefWidth="170.0" styleClass="menu-button" stylesheets="@style.css" text="CLOSE APP">
+               <graphic>
+                  <FontAwesomeIcon glyphName="CLOSE" />
+               </graphic>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="30.0" />
+         </padding>
+      </HBox>
+      <Button fx:id="playBtn1" layoutX="130.0" layoutY="264.0" mnemonicParsing="false" onAction="#playMusic" styleClass="circular-button" stylesheets="@style.css" text="▶" />
    </children>
 </AnchorPane>

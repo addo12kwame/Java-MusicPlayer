@@ -4,6 +4,8 @@ module project.mp {
     requires javafx.media;
 
 
+
+
     requires org.controlsfx.controls;
     requires org.kordamp.bootstrapfx.core;
 
