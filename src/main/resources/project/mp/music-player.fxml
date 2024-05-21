@@ -21,16 +21,16 @@
          </image>
       </ImageView>
       <ProgressBar fx:id="progressBar" layoutX="14.0" layoutY="242.0" prefHeight="12.0" prefWidth="358.0" progress="0.0" style="-fx-accent: rgba(0, 32, 63, 1);" stylesheets="@style.css" />
-      <Button fx:id="previosBtn" layoutX="62.0" layoutY="264.0" mnemonicParsing="false" styleClass="circular-button" stylesheets="@style.css" text="⏮" />
-      <Button fx:id="pauseBtn" layoutX="193.0" layoutY="264.0" mnemonicParsing="false" onAction="#stopMusic" styleClass="circular-button" stylesheets="@style.css" text="⏸" />
+      <Button fx:id="previosBtn" layoutX="62.0" layoutY="264.0" mnemonicParsing="false" onAction="#previousSong" styleClass="circular-button" stylesheets="@style.css" text="⏮" />
+      <Button fx:id="pauseBtn" layoutX="193.0" layoutY="264.0" mnemonicParsing="false" onAction="#pauseMusic" styleClass="circular-button" stylesheets="@style.css" text="⏸" />
       <Button fx:id="nextBtn" layoutX="253.0" layoutY="264.0" mnemonicParsing="false" onAction="#nextSong" styleClass="circular-button" stylesheets="@style.css" text="⏭" />
       <Label id="labelp" fx:id="playLabel" alignment="CENTER" layoutX="14.0" layoutY="177.0" prefHeight="50.0" prefWidth="358.0" styleClass="labelp" stylesheets="@style.css" text="KWAME" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="Segoe UI Black Italic" size="12.0" />
          </font>
       </Label>
-      <Slider fx:id="volumeSlide" layoutX="138.0" layoutY="326.0" max="100.0" stylesheets="@style.css" value="50.0" />
-      <Label layoutX="112.0" layoutY="323.0" prefHeight="30.0" prefWidth="18.0" text="🔊" />
+      <Slider fx:id="volumeSlide" blockIncrement="5.0" layoutX="138.0" layoutY="326.0" stylesheets="@style.css" value="50.0" />
+      <Label fx:id="soundLabel" layoutX="112.0" layoutY="323.0" prefHeight="30.0" prefWidth="18.0" text="🔊" />
       <ListView fx:id="musicList" layoutX="43.0" layoutY="92.0" prefHeight="86.0" prefWidth="300.0" styleClass="listview" stylesheets="@style.css" />
       <HBox layoutY="1.0" prefHeight="38.0" prefWidth="631.0" spacing="300.0">
          <children>
@@ -39,7 +39,7 @@
                   <FontAwesomeIcon glyphName="UPLOAD" />
                </graphic>
             </Button>
-            <Button fx:id="quit" mnemonicParsing="false" prefHeight="41.0" prefWidth="170.0" styleClass="menu-button" stylesheets="@style.css" text="CLOSE APP">
+            <Button fx:id="quit" mnemonicParsing="false" onAction="#close" prefHeight="41.0" prefWidth="170.0" styleClass="menu-button" stylesheets="@style.css" text="CLOSE APP">
                <graphic>
                   <FontAwesomeIcon glyphName="CLOSE" />
                </graphic>
@@ -50,5 +50,6 @@
          </padding>
       </HBox>
       <Button fx:id="playBtn1" layoutX="130.0" layoutY="264.0" mnemonicParsing="false" onAction="#playMusic" styleClass="circular-button" stylesheets="@style.css" text="▶" />
+      <Button fx:id="stopBtn" layoutX="303.0" layoutY="264.0" mnemonicParsing="false" onAction="#stopSong" styleClass="circular-button" stylesheets="@style.css" text="⏹" />
    </children>
 </AnchorPane>
