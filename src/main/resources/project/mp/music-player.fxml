@@ -24,7 +24,7 @@
       <Button fx:id="previosBtn" layoutX="62.0" layoutY="264.0" mnemonicParsing="false" onAction="#previousSong" styleClass="circular-button" stylesheets="@style.css" text="⏮" />
       <Button fx:id="pauseBtn" layoutX="193.0" layoutY="264.0" mnemonicParsing="false" onAction="#pauseMusic" styleClass="circular-button" stylesheets="@style.css" text="⏸" />
       <Button fx:id="nextBtn" layoutX="253.0" layoutY="264.0" mnemonicParsing="false" onAction="#nextSong" styleClass="circular-button" stylesheets="@style.css" text="⏭" />
-      <Label id="labelp" fx:id="playLabel" alignment="CENTER" layoutX="14.0" layoutY="177.0" prefHeight="50.0" prefWidth="358.0" styleClass="labelp" stylesheets="@style.css" text="KWAME" textAlignment="CENTER" textFill="WHITE">
+      <Label id="labelp" fx:id="playLabel" alignment="CENTER" layoutX="14.0" layoutY="177.0" prefHeight="50.0" prefWidth="358.0" styleClass="labelp" stylesheets="@style.css" text="No Song Playing !!!" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="Segoe UI Black Italic" size="12.0" />
          </font>
