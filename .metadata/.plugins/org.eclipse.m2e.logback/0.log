@@ -1,0 +1,100 @@
+2024-05-22 06:37:04,869 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-05-22 06:42:23,648 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-05-22 06:44:38,145 [Worker-8: Update Maven projects configuration] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-05-22 06:44:39,017 [Worker-8: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/3.2.2/maven-surefire-plugin-3.2.2.jar
+2024-05-22 06:44:39,196 [Worker-8: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/3.2.2/maven-surefire-plugin-3.2.2.jar
+2024-05-22 06:44:41,840 [Worker-8: Update Maven projects configuration] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mycompany:myapplication:1.0.0-SNAPSHOT @ C:\Users\Deandre\git\Java-MusicPlayer\pom.xml.
+2024-05-22 06:44:42,289 [Worker-8: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/3.2.2/maven-surefire-plugin-3.2.2.pom
+2024-05-22 06:44:42,314 [Worker-8: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/3.2.2/maven-surefire-plugin-3.2.2.pom
+2024-05-22 06:44:42,356 [Worker-8: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/3.2.2/surefire-3.2.2.pom
+2024-05-22 06:44:42,376 [Worker-8: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/3.2.2/surefire-3.2.2.pom
+2024-05-22 06:44:42,423 [Worker-8: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/40/maven-parent-40.pom
+2024-05-22 06:44:42,460 [Worker-8: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/40/maven-parent-40.pom
+2024-05-22 06:44:42,509 [Worker-8: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/apache/30/apache-30.pom
+2024-05-22 06:44:42,530 [Worker-8: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/apache/30/apache-30.pom
+2024-05-22 06:44:42,577 [Worker-8: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.9.3/junit-bom-5.9.3.pom
+2024-05-22 06:44:42,593 [Worker-8: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.9.3/junit-bom-5.9.3.pom
+2024-05-22 06:44:44,736 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://nexus.gluonhq.com/nexus/content/repositories/releases/org/openjfx/javafx-base/21/javafx-base-21-sources.jar
+2024-05-22 06:44:44,876 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/openjfx/javafx-base/21/javafx-base-21-sources.jar
+2024-05-22 06:44:44,923 [Worker-8: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Java-MusicPlayer/src/main/java
+2024-05-22 06:44:44,926 [Worker-8: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Java-MusicPlayer/src/main/resources
+2024-05-22 06:44:44,931 [Worker-8: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Java-MusicPlayer/src/test/java
+2024-05-22 06:44:44,932 [Worker-8: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Java-MusicPlayer/src/test/resources
+2024-05-22 06:44:45,048 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/openjfx/javafx-base/21/javafx-base-21-sources.jar
+2024-05-22 06:44:45,053 [Worker-26: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.openjfx:javafx-base:21
+2024-05-22 06:44:45,064 [Worker-26: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.openjfx:javafx-base:21win
+2024-05-22 06:44:45,179 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://nexus.gluonhq.com/nexus/content/repositories/releases/org/openjfx/javafx-graphics/21/javafx-graphics-21-sources.jar
+2024-05-22 06:44:45,350 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/openjfx/javafx-graphics/21/javafx-graphics-21-sources.jar
+2024-05-22 06:44:45,657 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/openjfx/javafx-graphics/21/javafx-graphics-21-sources.jar
+2024-05-22 06:44:45,661 [Worker-26: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.openjfx:javafx-graphics:21
+2024-05-22 06:44:45,675 [Worker-26: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.openjfx:javafx-graphics:21win
+2024-05-22 06:44:45,779 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://nexus.gluonhq.com/nexus/content/repositories/releases/org/openjfx/javafx-controls/21/javafx-controls-21-sources.jar
+2024-05-22 06:44:45,947 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/openjfx/javafx-controls/21/javafx-controls-21-sources.jar
+2024-05-22 06:44:46,171 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/openjfx/javafx-controls/21/javafx-controls-21-sources.jar
+2024-05-22 06:44:46,175 [Worker-26: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.openjfx:javafx-controls:21
+2024-05-22 06:44:46,185 [Worker-26: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.openjfx:javafx-controls:21win
+2024-05-22 06:44:46,290 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://nexus.gluonhq.com/nexus/content/repositories/releases/com/gluonhq/charm-glisten/6.2.3/charm-glisten-6.2.3-sources.jar
+2024-05-22 06:44:46,474 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/gluonhq/charm-glisten/6.2.3/charm-glisten-6.2.3-sources.jar
+2024-05-22 06:44:46,479 [Worker-26: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for com.gluonhq:charm-glisten:6.2.3
+org.eclipse.core.runtime.CoreException: Could not resolve artifact com.gluonhq:charm-glisten:jar:sources:6.2.3
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2024-05-22 06:44:46,600 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://nexus.gluonhq.com/nexus/content/repositories/releases/com/gluonhq/attach/display/4.0.19/display-4.0.19-sources.jar
+2024-05-22 06:44:46,746 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/gluonhq/attach/display/4.0.19/display-4.0.19-sources.jar
+2024-05-22 06:44:46,932 [Worker-8: Update Maven projects configuration] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 5.00 sec, update config takes 3.00 sec 
+2024-05-22 06:44:46,943 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/gluonhq/attach/display/4.0.19/display-4.0.19-sources.jar
+2024-05-22 06:44:46,948 [Worker-26: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.gluonhq.attach:display:4.0.19
+2024-05-22 06:44:47,049 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://nexus.gluonhq.com/nexus/content/repositories/releases/com/gluonhq/attach/lifecycle/4.0.19/lifecycle-4.0.19-sources.jar
+2024-05-22 06:44:47,193 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/gluonhq/attach/lifecycle/4.0.19/lifecycle-4.0.19-sources.jar
+2024-05-22 06:44:47,411 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/gluonhq/attach/lifecycle/4.0.19/lifecycle-4.0.19-sources.jar
+2024-05-22 06:44:47,415 [Worker-26: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.gluonhq.attach:lifecycle:4.0.19
+2024-05-22 06:44:47,537 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://nexus.gluonhq.com/nexus/content/repositories/releases/com/gluonhq/attach/statusbar/4.0.19/statusbar-4.0.19-sources.jar
+2024-05-22 06:44:47,603 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 23 resources from src\main\resources to target\classes
+2024-05-22 06:44:47,658 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Deandre\git\Java-MusicPlayer\src\test\resources
+2024-05-22 06:44:47,704 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/gluonhq/attach/statusbar/4.0.19/statusbar-4.0.19-sources.jar
+2024-05-22 06:44:47,779 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/gluonhq/attach/statusbar/4.0.19/statusbar-4.0.19-sources.jar
+2024-05-22 06:44:47,783 [Worker-26: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.gluonhq.attach:statusbar:4.0.19
+2024-05-22 06:44:47,891 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://nexus.gluonhq.com/nexus/content/repositories/releases/com/gluonhq/attach/storage/4.0.19/storage-4.0.19-sources.jar
+2024-05-22 06:44:48,040 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/gluonhq/attach/storage/4.0.19/storage-4.0.19-sources.jar
+2024-05-22 06:44:48,170 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/gluonhq/attach/storage/4.0.19/storage-4.0.19-sources.jar
+2024-05-22 06:44:48,173 [Worker-26: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.gluonhq.attach:storage:4.0.19
+2024-05-22 06:44:48,267 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://nexus.gluonhq.com/nexus/content/repositories/releases/com/gluonhq/attach/util/4.0.19/util-4.0.19-sources.jar
+2024-05-22 06:44:48,460 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/gluonhq/attach/util/4.0.19/util-4.0.19-sources.jar
+2024-05-22 06:44:48,634 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/gluonhq/attach/util/4.0.19/util-4.0.19-sources.jar
+2024-05-22 06:44:48,638 [Worker-26: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.gluonhq.attach:util:4.0.19
+2024-05-22 06:44:48,731 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://nexus.gluonhq.com/nexus/content/repositories/releases/org/openjfx/javafx-fxml/21/javafx-fxml-21-sources.jar
+2024-05-22 06:44:48,862 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/openjfx/javafx-fxml/21/javafx-fxml-21-sources.jar
+2024-05-22 06:44:48,938 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/openjfx/javafx-fxml/21/javafx-fxml-21-sources.jar
+2024-05-22 06:44:48,941 [Worker-26: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.openjfx:javafx-fxml:21
+2024-05-22 06:44:48,948 [Worker-26: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.openjfx:javafx-fxml:21win
+2024-05-22 06:44:49,051 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://nexus.gluonhq.com/nexus/content/repositories/releases/org/controlsfx/controlsfx/11.1.2/controlsfx-11.1.2-sources.jar
+2024-05-22 06:44:49,202 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/controlsfx/controlsfx/11.1.2/controlsfx-11.1.2-sources.jar
+2024-05-22 06:44:49,462 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/controlsfx/controlsfx/11.1.2/controlsfx-11.1.2-sources.jar
+2024-05-22 06:44:49,465 [Worker-26: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.controlsfx:controlsfx:11.1.2
+2024-05-22 06:44:49,610 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://nexus.gluonhq.com/nexus/content/repositories/releases/org/kordamp/bootstrapfx/bootstrapfx-core/0.4.0/bootstrapfx-core-0.4.0-sources.jar
+2024-05-22 06:44:49,745 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/kordamp/bootstrapfx/bootstrapfx-core/0.4.0/bootstrapfx-core-0.4.0-sources.jar
+2024-05-22 06:44:49,812 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/kordamp/bootstrapfx/bootstrapfx-core/0.4.0/bootstrapfx-core-0.4.0-sources.jar
+2024-05-22 06:44:49,815 [Worker-26: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.kordamp.bootstrapfx:bootstrapfx-core:0.4.0
+2024-05-22 06:44:49,912 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://nexus.gluonhq.com/nexus/content/repositories/releases/org/openjfx/javafx-media/21-ea+24/javafx-media-21-ea+24-sources.jar
+2024-05-22 06:44:50,053 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/openjfx/javafx-media/21-ea+24/javafx-media-21-ea+24-sources.jar
+2024-05-22 06:44:50,167 [Worker-26: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/openjfx/javafx-media/21-ea+24/javafx-media-21-ea+24-sources.jar
+2024-05-22 06:44:50,170 [Worker-26: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.openjfx:javafx-media:21-ea+24
+2024-05-22 06:44:50,178 [Worker-26: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.openjfx:javafx-media:21-ea+24win
+2024-05-22 06:46:40,673 [Worker-2: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://nexus.gluonhq.com/nexus/content/repositories/releases/com/gluonhq/charm-glisten/6.2.3/charm-glisten-6.2.3-javadoc.jar
+2024-05-22 06:46:40,917 [Worker-2: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://nexus.gluonhq.com/nexus/content/repositories/releases/com/gluonhq/charm-glisten/6.2.3/charm-glisten-6.2.3-javadoc.jar
+2024-05-22 06:46:40,921 [Worker-2: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded javadoc for com.gluonhq:charm-glisten:6.2.3
