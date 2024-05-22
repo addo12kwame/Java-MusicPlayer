@@ -109,14 +109,12 @@ public class MusicController {
      * This function stops the music from playing and resets timer , progress bar and music
      */
     public void stopSong(){
-        cancelTimer();
-        if (mp != null) {
-            mp.seek(Duration.ZERO);
-            mp.stop();
-            progressBar.setProgress(0);
-        }
 
-
+            if (mp != null) {
+                mp.seek(Duration.ZERO);
+                mp.stop();
+                progressBar.setProgress(0);
+            }
 
     }
 
@@ -125,6 +123,7 @@ public class MusicController {
      *  It also handles when the music resuming from pause
      */
     public void playMusic(){
+        if (!musicArray.isEmpty()){
         currentSong = musicArray.get(musicList.getSelectionModel().getSelectedIndex()).getName();
 //        System.out.printf("current is %s",currentSong);
 
@@ -154,7 +153,7 @@ public class MusicController {
         }
         isStart = false;
 
-beginTimer();
+beginTimer();}
     }
 
 
@@ -209,40 +208,40 @@ beginTimer();
      * Next handles the next function for the music player
      */
     public void nextSong(){
-        isPause = false;
-        songNumber = musicList.getSelectionModel().getSelectedIndex();
+        if (!musicArray.isEmpty()) {
+            isPause = false;
+            songNumber = musicList.getSelectionModel().getSelectedIndex();
 
-        if (isStart){
-            songNumber++;
-            scrollCheck = songNumber;
-            isStart = false;
-            musicList.getSelectionModel().select(songNumber);
-            mp.stop();
+            if (isStart) {
+                songNumber++;
+                scrollCheck = songNumber;
+                isStart = false;
+                musicList.getSelectionModel().select(songNumber);
+                mp.stop();
 
-            if ((scrollCheck)%3 == 0){
-                musicList.scrollTo(songNumber);}
+                if ((scrollCheck) % 3 == 0) {
+                    musicList.scrollTo(songNumber);
+                }
+            } else if (songNumber < musicArray.size() - 1) {
+                songNumber++;
+                scrollCheck = songNumber;
+                mp.stop();
+                musicList.getSelectionModel().select(songNumber);
+                if ((scrollCheck) % 3 == 0) {
+                    musicList.scrollTo(songNumber);
+                }
+
+            } else if (songNumber == musicArray.size() - 1) {
+                songNumber = 0;
+                scrollCheck = songNumber;
+                musicList.getSelectionModel().select(songNumber);
+                musicList.scrollTo(songNumber);
+                mp.stop();
+            }
+
+            playMusic();
+
         }
-
-        else if (songNumber < musicArray.size()-1){
-            songNumber++;
-            scrollCheck = songNumber;
-            mp.stop();
-            musicList.getSelectionModel().select(songNumber);
-            if ((scrollCheck)%3 == 0){
-                musicList.scrollTo(songNumber);}
-
-        }
-        else if (songNumber == musicArray.size()-1){
-            songNumber = 0;
-            scrollCheck = songNumber;
-            musicList.getSelectionModel().select(songNumber);
-            musicList.scrollTo(songNumber);
-            mp.stop();
-        }
-
-        playMusic();
-
-
     }
 
 
@@ -251,24 +250,24 @@ beginTimer();
      * It makes sure song and labels are set appropriately when we go the previous song
       */
     public void previousSong(){
+        if (!musicArray.isEmpty()) {
             isPause = false;
 
-            if (songNumber > 0){
-            songNumber--;
-            scrollCheck = songNumber;
-            mp.stop();
-            musicList.getSelectionModel().select(songNumber);
-            playMusic();
-            musicList.scrollTo(songNumber);
+            if (songNumber > 0) {
+                songNumber--;
+                scrollCheck = songNumber;
+                mp.stop();
+                musicList.getSelectionModel().select(songNumber);
+                playMusic();
+                musicList.scrollTo(songNumber);
+            } else if (songNumber == 0) {
+
+                scrollCheck = 0;
+
+                mp.stop();
+                playMusic();
+            }
         }
-        else if (songNumber == 0){
-
-            scrollCheck = 0;
-
-            mp.stop();
-            playMusic();
-        }
-
     }
 
     /**
