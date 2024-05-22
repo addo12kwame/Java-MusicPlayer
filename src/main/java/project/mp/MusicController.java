@@ -76,7 +76,7 @@ public class MusicController {
 
     /**
      * Volume Property is defined in this initializer
-     * Background image is also set to fit the parent window
+     * We also define the extension filter to make sure we get only mp3 files when we choose a directory
      */
     public void initialize()
     {
@@ -129,6 +129,7 @@ public class MusicController {
     /**
      *  PlayMusic() handles the music player and also sets labels accordingly
      *  It also handles when the music resuming from pause
+     *  Also initiates the timer which drives the song progress bar
      */
     public void playMusic()
     {
@@ -168,7 +169,7 @@ public class MusicController {
 
 
     /**
-     * Helper function to call the next function
+     * Helper function to call the nextSong function
      * @param isClickNext is boolean value that when true calls the nextSong method
      */
     public void move(boolean isClickNext )
@@ -180,6 +181,8 @@ public class MusicController {
     /**
      * This handler handles the choosing of music directory
      * Makes the music play automatically when we choose directory
+     * When a directory that doesn't contain mp3 files is added
+     * Or no directory is added, the play Button remains disabled
      */
     public void upload()
     {
@@ -212,7 +215,7 @@ public class MusicController {
         }
         catch (Exception t)
         {
-            System.out.println("No directory Selected");
+            System.out.println("No directory Selected or No mp3 files in this directory");
             playBtn1.setDisable(true);
         }
 
@@ -298,7 +301,7 @@ public class MusicController {
 
     /**
      * This function starts our timer async so that we can track the progress of our song
-     *
+     * Lets the song continue to the next song when the present song finish playing
      */
     public void beginTimer()
     {
