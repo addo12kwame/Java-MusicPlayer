@@ -1,3 +1,8 @@
+/**
+ * Author : Kwame Addo
+ * Date : 5/22/2024
+ */
+
 package project.mp;
 
 import javafx.application.Application;

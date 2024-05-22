@@ -17,6 +17,7 @@ import javafx.stage.DirectoryChooser;
 import javafx.util.Duration;
 
 import java.io.File;
+import java.io.FilenameFilter;
 import java.util.*;
 
 public class MusicController {
@@ -68,6 +69,7 @@ public class MusicController {
 
     boolean isStart = true;
     Timeline t;
+    FilenameFilter typeMp3;
 
 
     /**
@@ -83,13 +85,19 @@ public class MusicController {
             if (mp != null){
             mp.setVolume(volumeSlide.getValue()*0.01);}
         });
+
+        typeMp3 = new FilenameFilter() {
+            @Override
+            public boolean accept(File dir, String name) {
+                return name.endsWith("mp3");
+            }
+        };
     }
 
     /**
      * Pauses the media
      */
     public void pauseMusic(){
-//        cancelTimer();
         if (mp != null) {
             mp.pause();
             isPause = true;
@@ -118,7 +126,7 @@ public class MusicController {
      */
     public void playMusic(){
         currentSong = musicArray.get(musicList.getSelectionModel().getSelectedIndex()).getName();
-        System.out.printf("current is %s",currentSong);
+//        System.out.printf("current is %s",currentSong);
 
         if (mp == null){
         m = new Media(musicArray.get(musicList.getSelectionModel().getSelectedIndex()).toURI().toString());
@@ -129,7 +137,7 @@ public class MusicController {
         if (isPause){
             mp.play();
             isPause = false;
-            System.out.println(mp.getCurrentTime());
+//            System.out.println(mp.getCurrentTime());
         }
     else
     {
@@ -138,10 +146,10 @@ public class MusicController {
             mp = new MediaPlayer(m);
             mp.play();
             currentSong = musicArray.get(musicList.getSelectionModel().getSelectedIndex()).getName();
+    }
 
-        }
-
-        if (songNumber >= 0){
+        if (songNumber >= 0)
+        {
             playLabel.setText(musicList.getSelectionModel().getSelectedItem());
         }
         isStart = false;
@@ -167,8 +175,12 @@ beginTimer();
         if (mp != null)mp.stop();
         DirectoryChooser dialog = new DirectoryChooser();
         try {
+
         file = dialog.showDialog(musicList.getScene().getWindow());
-            for (File f: Objects.requireNonNull(file.listFiles())){
+            for (File f: Objects.requireNonNull(file.listFiles(typeMp3))){
+
+                System.out.println(f.getName());
+                System.out.println(f.getName().endsWith("mp3"));
                 musicArray.add(f);
                 showMusicArray.add(f.getName());
 
@@ -177,19 +189,20 @@ beginTimer();
             obList = FXCollections.observableList(showMusicArray);
 
             musicList.setItems(obList);
+            songNumber = 0;
+            musicList.getSelectionModel().select(songNumber);
+
+
+            playLabel.setText(showMusicArray.get(songNumber));
+            mp = new MediaPlayer(new Media(musicArray.get(0).toURI().toString()));
+
+            playMusic();
 
         }
         catch (Exception t){
             System.out.println("No directory Selected");
         }
-        songNumber = 0;
-        musicList.getSelectionModel().select(songNumber);
 
-
-        playLabel.setText(showMusicArray.get(songNumber));
-        mp = new MediaPlayer(new Media(musicArray.get(0).toURI().toString()));
-
-        playMusic();
     }
 
     /**
