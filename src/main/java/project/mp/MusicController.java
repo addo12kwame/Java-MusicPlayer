@@ -70,6 +70,7 @@ public class MusicController {
     boolean isStart = true;
     Timeline t;
     FilenameFilter typeMp3;
+    boolean isPlayDisabled = true;
 
 
     /**
@@ -92,6 +93,8 @@ public class MusicController {
                 return name.endsWith("mp3");
             }
         };
+
+
     }
 
     /**
@@ -197,9 +200,12 @@ beginTimer();}
 
             playMusic();
 
+            playBtn1.setDisable(false);
+
         }
         catch (Exception t){
             System.out.println("No directory Selected");
+            playBtn1.setDisable(true);
         }
 
     }
@@ -238,9 +244,7 @@ beginTimer();}
                 musicList.scrollTo(songNumber);
                 mp.stop();
             }
-
             playMusic();
-
         }
     }
 
@@ -289,9 +293,22 @@ beginTimer();}
         t.play();
     }
 
+
     public void cancelTimer(){
         t.stop();
         running = false;
+    }
+
+
+    public void clear() {
+        if (obList != null) {
+            stopSong();
+            musicList.getItems().clear();
+            obList.clear();
+            musicArray.clear();
+            showMusicArray.clear();
+            playLabel.setText("Kwame");
+        }
     }
 
         /**
