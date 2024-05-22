@@ -302,7 +302,7 @@ beginTimer();}
 
     public void clear() {
         if (obList != null) {
-
+            stopSong();
             musicList.getItems().clear();
             obList.clear();
             musicArray.clear();
