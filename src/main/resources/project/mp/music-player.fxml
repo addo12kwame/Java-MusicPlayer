@@ -36,17 +36,17 @@
          <children>
             <Button fx:id="addDir" mnemonicParsing="false" onAction="#upload" prefHeight="41.0" prefWidth="170.0" styleClass="menu-button" stylesheets="@style.css" text="CHOOSE FOLDER">
                <graphic>
-                  <FontAwesomeIcon glyphName="UPLOAD" />
+<!--                  <FontAwesomeIcon glyphName="UPLOAD" />-->
                </graphic>
             </Button>
             <Button fx:id="clearBtn" mnemonicParsing="false" onAction="#clear" prefHeight="41.0" prefWidth="170.0" styleClass="menu-button" stylesheets="@style.css" text="RESET MUSIC">
                <graphic>
-                  <FontAwesomeIcon glyphName="REFRESH" />
+<!--                  <FontAwesomeIcon glyphName="REFRESH" />-->
                </graphic>
             </Button>
             <Button fx:id="quit" mnemonicParsing="false" onAction="#close" prefHeight="41.0" prefWidth="170.0" styleClass="menu-button" stylesheets="@style.css" text="CLOSE APP">
                <graphic>
-                  <FontAwesomeIcon glyphName="CLOSE" />
+<!--                  <FontAwesomeIcon glyphName="CLOSE" />-->
                </graphic>
             </Button>
          </children>
